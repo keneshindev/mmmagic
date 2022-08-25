@@ -43,6 +43,13 @@
           ],
           'include_dirs': [ 'config/linux' ],
         }],
+        [ 'OS=="android"', {
+          'sources': [
+            'src/strlcat.c',
+            'src/strlcpy.c',
+          ],
+          'include_dirs': [ 'config/android' ],
+        }],
         [ 'OS=="mac"', {
           'include_dirs': [ 'config/mac' ],
         }],
